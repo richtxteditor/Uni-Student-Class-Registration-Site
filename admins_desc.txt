@@ -1,0 +1,27 @@
+INSERT INTO admins (admin_name, admin_username, admin_password) VALUES
+('Wanda', 'silvaw2', '123456'),
+('Nathan', 'williamsn12', '78910'),
+('Richie', 'molinar4', '23489');
+
+
+MariaDB [finalprojdatabase]> describe admins;
+Connection id:    544
+Current database: finalprojdatabase
+
++----------------+-------------+------+-----+---------+-------+
+| Field          | Type        | Null | Key | Default | Extra |
++----------------+-------------+------+-----+---------+-------+
+| admin_name     | varchar(60) | NO   | PRI | NULL    |       |
+| admin_username | varchar(60) | YES  |     | NULL    |       |
+| admin_password | varchar(60) | YES  |     | NULL    |       |
++----------------+-------------+------+-----+---------+-------+
+3 rows in set (0.020 sec)
+
+MariaDB [finalprojdatabase]> select * from admins;
++------------+----------------+--------------------------------------------------------------+
+| admin_name | admin_username | admin_password                                               |
++------------+----------------+--------------------------------------------------------------+
+| Nathan     | williamsn12    | $2y$10$Tk2Rnc7wBcsYGzAZarvodevq1GgC.aMxRdQitRByVgPHbwNuOEuam |
+| Richie     | molinar4       | $2y$10$IkwkkKb/6KmhF3ztSxx82e41nc7bLTTfCOkcUOtjQbGTmpNEyxBfK |
+| Wanda      | silvaw2        | $2y$10$TYSim6MWD7xq4jHPeV0v6eesYrBc7VQVzWTc8RsRaJASrrBSgGpOC |
++------------+----------------+--------------------------------------------------------------+

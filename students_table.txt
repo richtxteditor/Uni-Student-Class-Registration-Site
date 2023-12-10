@@ -1,0 +1,28 @@
+MariaDB [finalprojdatabase]> describe students;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| sid      | int(11)     | NO   | PRI | NULL    |       |
+| sname    | varchar(60) | NO   |     | NULL    |       |
+| username | varchar(60) | NO   |     | NULL    |       |
+| password | varchar(60) | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.004 sec)
+
+MariaDB [finalprojdatabase]> select * from students;
++-------+--------+-----------------+--------------------------------------------------------------+
+| sid   | sname  | username        | password                                                     |
++-------+--------+-----------------+--------------------------------------------------------------+
+|   190 | Abby   | 1234abc         | $2y$10$b4FHFfbKNz5.lfVbGaVfpOmFI5y3YO.JG7dWRng7GGept5TI4vBkW |
+|   208 | Jamie  | castello14      | $2y$10$3GF2HYLp3B6fnZtn9SARGuykUzjfHkpEvu88G8qna0eAxdzz0tI3K |
+|   720 | Angela | gomez3          | $2y$10$rlT0qdklfMSB/21onOuJJuDvMIsVx7mPSC1zQya3tHrJMhh7hrA2m |
+|  7086 | Yuno   | yunoawesome1223 | $2y$10$pLXhIVDuh9j2057GG0wqw.e.16JJPvIZSW55pgTWlu0n5Nmazwx7C |
+|  7087 | rich   | richo           | $2y$10$5DKOnf9ff6gPEl23dJdikev9AXYCMJFZJq7Yt2JAwW5KPgBE8NagC |
+|  7088 | hello  | helloagain      | $2y$10$vDEXAAF7R.hfJlsuvGvLW.EWHXKQqawhhd1r1ByxfdQqAaclVt2ly |
+|  7089 |        |                 | $2y$10$l.19PGCK2GR3sqmZ3NDoTOrLNbHeSrMBoyvKTo0lBrctWglsjmjIm |
+|  7090 | john   | john@john.com   | $2y$10$aWei44rJ1Sb60B9.9PfLq.2DvwKLNgRvowXofHEXml89iAehWiTqG |
+|  7091 | richie | richie          | $2y$10$iiETN9XQaHvFm.fSePY5jeNGT8U.JJfjAKl5ehvrINMZXwC6QUUAW |
+|  7092 | test   | tester          | $2y$10$3.Lyediim88c5znduS.7LOCK.zVJA4U6QXpSxSEAcni782OwAhnLO |
+| 12345 | karen  | karen123        | $2y$10$oNAYYrfUVP9wBlv5hXZqpO5RnC9EbJx2iu4zYPHfQa6AuDbnUIJhG |
++-------+--------+-----------------+--------------------------------------------------------------+
+11 rows in set (0.002 sec)
